@@ -9,8 +9,8 @@ export default function (Vue, options, {
   router
 }) {
   const opt = {
-    ...options,
-    ...defaultOptions
+    ...defaultOptions,
+    ...options
   }
   // Inject styles.
   const styles = `
