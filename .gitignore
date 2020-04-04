@@ -8,3 +8,7 @@ coverage
 *.log
 
 package-lock.json
+
+# Built files
+files
+index.js

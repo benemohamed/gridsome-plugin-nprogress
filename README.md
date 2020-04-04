@@ -3,18 +3,18 @@
       <img src="https://gridsome.org/logos/logo-circle-light.svg" alt="gridsome logo" width="100px"/>
     </a>
     <h1 align="center">gridsome-plugin-nprogress</h1>
-    <p align="center">Automatically shows the nprogress indicator when a page is delayed in loading (which Gatsby considers as one second after clicking on a link).
+    <p align="center">Automatically shows the nprogress indicator when a page is delayed in loading (which Gridsome considers as one second after clicking on a link).
     </p>
 </p>
 
 ## Install
 
 ```bash
-yarn add  gridsome-plugin-nprogress
+yarn add gridsome-plugin-nprogress
 ```
 
 ```bash
-npm i  gridsome-plugin-nprogress
+npm i gridsome-plugin-nprogress
 ```
 
 ## Usage

@@ -15,6 +15,10 @@
     "nprogress",
     "loading"
   ],
+  "scripts": {
+    "build": "babel src -d ./",
+    "test": "echo \"tests not created\""
+  },
   "dependencies": {
     "nprogress": "^0.2.0"
   },

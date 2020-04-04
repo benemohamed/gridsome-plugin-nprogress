@@ -5,12 +5,13 @@ const defaultOptions = {
   color: `#667eea`
 }
 
-export default function (Vue, pluginoptions, context) {
+export default function (Vue, options, {
+  router
+}) {
   const options = {
-    ...defaultOptions,
-    ...pluginoptions
+    ...options,
+    ...defaultOptions
   }
-  console.log(options)
   // Inject styles.
   const styles = `
     #nprogress {
@@ -88,7 +89,7 @@ export default function (Vue, pluginoptions, context) {
 
   NProgress.configure(options)
 
-  context.router.beforeResolve((to, from, next) => {
+  router.beforeResolve((to, from, next) => {
 
     if (to.name) {
       // Start progress bar.
@@ -97,7 +98,7 @@ export default function (Vue, pluginoptions, context) {
     next()
   })
 
-  context.router.afterEach((to, from) => {
+  router.afterEach((to, from) => {
     // Complete the progress bar.
     NProgress.done()
   })
