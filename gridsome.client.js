@@ -8,7 +8,7 @@ const defaultOptions = {
 export default function (Vue, options, {
   router
 }) {
-  const options = {
+  const opt = {
     ...options,
     ...defaultOptions
   }
@@ -18,7 +18,7 @@ export default function (Vue, options, {
      pointer-events: none;
     }
     #nprogress .bar {
-      background: ${options.color};
+      background: ${opt.color};
       position: fixed;
       z-index: 1031;
       top: 0;
@@ -32,7 +32,7 @@ export default function (Vue, options, {
       right: 0px;
       width: 100px;
       height: 100%;
-      box-shadow: 0 0 10px ${options.color}, 0 0 5px ${options.color};
+      box-shadow: 0 0 10px ${opt.color}, 0 0 5px ${opt.color};
       opacity: 1.0;
       -webkit-transform: rotate(3deg) translate(0px, -4px);
       -ms-transform: rotate(3deg) translate(0px, -4px);
@@ -50,8 +50,8 @@ export default function (Vue, options, {
       height: 18px;
       box-sizing: border-box;
       border: solid 2px transparent;
-      border-top-color: ${options.color};
-      border-left-color: ${options.color};
+      border-top-color: ${opt.color};
+      border-left-color: ${opt.color};
       border-radius: 50%;
       -webkit-animation: nprogress-spinner 400ms linear infinite;
       animation: nprogress-spinner 400ms linear infinite;
