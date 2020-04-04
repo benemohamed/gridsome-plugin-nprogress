@@ -1,0 +1,26 @@
+{
+  "name": "gridsome-plugin-nprogress",
+  "version": "0.0.1",
+  "description": "Shows page loading indicator when loading page resources is delayed",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Mohamed Ben rebia <mohamed@ipfinder.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benemohamed/gridsome-plugin-nprogress.git"
+  },
+  "keywords": [
+    "gridsome",
+    "plugin",
+    "nprogress",
+    "loading"
+  ],
+  "dependencies": {
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  }
+}
