@@ -6,7 +6,8 @@ const defaultOptions = {
 }
 
 export default function (Vue, options, {
-  router
+  router,
+  head
 }) {
   const opt = {
     ...defaultOptions,
@@ -82,10 +83,10 @@ export default function (Vue, options, {
     }
   `
 
-  const node = document.createElement(`style`)
-  node.id = `nprogress-styles`
-  node.innerHTML = styles
-  document.head.appendChild(node)
+  head.style.push({
+    type: 'text/css',
+    cssText: styles
+  })
 
   NProgress.configure(options)
 
