@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-nprogress",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Shows page loading indicator when loading page resources is delayed",
   "main": "index.js",
   "license": "MIT",

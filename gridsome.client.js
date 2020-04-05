@@ -91,7 +91,7 @@ export default function (Vue, options, {
 
   router.beforeResolve((to, from, next) => {
 
-    if (to.name) {
+    if (!to.hash && typeof document !== "undefined") {
       // Start progress bar.
       NProgress.start()
     }
@@ -100,6 +100,9 @@ export default function (Vue, options, {
 
   router.afterEach((to, from) => {
     // Complete the progress bar.
-    NProgress.done()
+    if (!to.hash && typeof document !== "undefined") {
+      NProgress.done()
+    }
+
   })
 }
